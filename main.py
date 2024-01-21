@@ -194,6 +194,8 @@ while run:
         player2.left()
     elif key[pygame.K_RIGHT]:
         player2.right()
+    elif key[pygame.K_SPACE]:
+        run = False
     if chaser1.enabled:
         chaser1.pathfind(player1.x, player1.y, player2.x, player2.y)
     player1.score()
